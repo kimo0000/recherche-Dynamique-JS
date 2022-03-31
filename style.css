@@ -1,0 +1,151 @@
+/* reset */
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 15px;
+}
+
+/* style navbar */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    padding: 10px;
+}
+
+.navigation {
+    width: 250px;
+    height: 100%;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nav_logo .logo_title {
+    padding-left: 10px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.nav_logo img {
+    padding-top: 10px;
+}
+
+.nav_links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.nav_links a {
+    padding: 10px;
+    color: #999;
+    display: flex;
+    justify-content: start;
+     
+}
+
+.nav_links span {
+    padding-left: 10px;
+}
+
+.nav_links a.active {
+    background-color: #ddd;
+    color: #f50;
+}
+
+/* style main */
+.main_content {
+    padding: 20px;
+    width: 100%;
+}
+
+.input_control {
+    display: flex;
+    align-items: center;
+    background-color: #ddd;
+    padding: 15px;
+}
+
+.input_control input {
+    width: 350px;
+    border: none;
+    background-color: #ddd;
+    padding-left: 5px;
+}
+
+.input_control img {
+    position: relative;
+    top: 3px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.table_items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    margin-bottom: 5px;
+    background: #fff;
+}
+
+.table_items:nth-child(odd) {
+    background-color: #eee
+}
+
+.table_item {
+    display: flex;
+    align-items: center;
+}
+
+.table_item img {
+    border-radius: 50%;
+    width: 20px;
+}
+
+.table_info {
+    padding-left: 10px;
+}
+
+/* small device */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .table_result {
+        margin-top: 20px;
+    }
+    
+    .main_content h2 {
+        display: none;
+    }
+
+    .table {
+        display: none;
+    }
+}

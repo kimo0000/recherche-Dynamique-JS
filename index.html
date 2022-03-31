@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de recherche js</title>
+    <link rel="stylesheet" href="./style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
+    <script src="./app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navigation">
+            <div class="nav_logo">
+                <img src="imgs/address-book-solid.svg" alt="icone" >
+                <h1 class="logo_title">user</h1>
+            </div>
+
+            <div class="nav_links">
+                <a href="#">
+                    <img src="imgs/anchor-solid.svg" alt="icone" >
+                    <span>dashbord</span>
+                </a>
+                <a href="#">
+                    <img src="imgs/atom-solid.svg" alt="icone">
+                    <span>atom_react</span>
+                </a>
+                <a href="#" class="active">
+                    <img src="imgs/facebook-messenger-brands.svg" alt="icone">
+                    <span>messenger</span>
+                </a>
+                <a href="#">
+                    <img src="imgs/facebook-messenger-brands.svg" alt="icone">
+                    <span>facebook</span>
+                </a>
+            </div>
+        </nav>
+
+        <main class="main_content">
+             <div class="input_control">
+                 <label class="input_img" for="search">
+                     <img src="imgs/magnifying-glass-solid.svg" alt="icone" > 
+                 </label>
+                 <input type="text" id="search" placeholder="search bar" >
+             </div>
+
+             <h2 class="main_content">touati karim</h2>
+
+             <div class="table">
+                <p class="table_title">Name</p>
+                <p class="table_title">Email</p>
+                <p class="table_title">Phone</p>
+             </div>
+
+             <div class="table_result">
+
+               
+            </div>
+        </main>
+
+    </div>
+</body>
+</html>
